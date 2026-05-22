@@ -110,11 +110,11 @@ Okuyucu, varsayılan olarak `chapters/` dizinini tarayarak `chapter-1.txt`, `cha
 
 ```javascript
 const CONFIG = {
-  chapterPrefix: "chapter-",     // Dosyalarınızın ön eki (prefix)
-  chapterExtension: ".txt",      // Dosya uzantısı (extension)
-  basePath: "./chapters/",       // Bölümlerin saklandığı klasör yolu (basePath)
+  chapterPrefix: "chapter-",     // Dosyalarınızın ön eki
+  chapterExtension: ".txt",      // Dosya uzantısı
+  basePath: "./chapters/",       // Bölümlerin saklandığı klasör yolu
   totalChapters: 2235,           // Toplam bölüm sayısı
-  storageKey: "lastChapter",     // İlerleme için LocalStorage anahtarı (key)
+  storageKey: "lastChapter",     // İlerleme için LocalStorage anahtarı
 };
 ```
 
