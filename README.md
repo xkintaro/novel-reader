@@ -1,136 +1,117 @@
 <a href="README.md">
- <img src="https://img.shields.io/badge/Language-English-blue?style=flat-square&logo=google-translate&logoColor=white" alt="English">
+  <img src="https://img.shields.io/badge/Language-English-blue?style=flat-square&logo=google-translate&logoColor=white" alt="English">
 </a>
 <a href="README-TR.md">
- <img src="https://img.shields.io/badge/Dil-Türkçe-red?style=flat-square&logo=google-translate&logoColor=white" alt="Türkçe">
+  <img src="https://img.shields.io/badge/Language-Türkçe-red?style=flat-square&logo=google-translate&logoColor=white" alt="Türkçe">
 </a>
 
   <br />
   <br />
 
 <div align="center">
-  <img src="kintaro.png" width="120" height="120" />
+  <img src="mascot.png" width="120" height="120" />
   <br />
   <br />
 
   <p>
-    Minimalist web novel reader with smooth and focused reading experience.
+     A minimalist web reader for reading novels chapter by chapter.
   </p>
 
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Lucide Icons](https://img.shields.io/badge/Lucide-FF69B4?style=for-the-badge&logo=lucide&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
   <p>
+    <a href="#warning">Warning</a> •
+    <a href="#demo">Demo</a> •
+    <a href="#about">About</a> •
     <a href="#features">Features</a> •
-    <a href="#technologies">Technologies</a> •
-    <a href="#installation">Installation</a> •
-    <a href="#configuration">Configuration</a> •
-    <a href="#license">License</a> •
-    <a href="#gallery">Gallery</a>
+    <a href="#tech">Tech</a> •
+    <a href="#setup">Setup</a> •
+    <a href="#license">License</a>
   </p>
 
   <br />
   <br />
 </div>
 
-## 📷 Demo Link
+## <a id="warning"></a> ⚠️ Warning
 
-- [https://xkintaro.github.io/text-reader/](https://xkintaro.github.io/text-reader/)
+This project was first published as **Aether Reader** and later renamed to **Text Reader**. It has now been renamed to **Novel Reader** to better describe what it does. As part of this change, the old logo was replaced with a new logo that is also used as the favicon.
 
-## 📋 About
+## <a id="demo"></a> 📷 Demo
 
-**Text Reader** is a premium, minimalist web novel reader interface designed for a focus-oriented reading experience. It provides a sleek, modern UI with smooth transitions, keyboard shortcuts, and persistent reading progress.
+- [https://xkintaro.github.io/novel-reader/](https://xkintaro.github.io/novel-reader/)
 
-## ✨ Features <a id="features"></a>
+## <a id="about"></a> 📋 About
 
-- **Premium Aesthetics:** Dark-themed interface with glassmorphism effects and gold accents.
-- **Seamless Navigation:** Easy-to-use navigation buttons for moving between chapters.
-- **Chapter Library:** A modal-based library for quick chapter selection and direct jumping.
-- **Persistent Reading:** Automatically remembers your last read chapter using LocalStorage.
-- **Keyboard Shortcuts:**
-  - `ArrowLeft` / `ArrowRight`: Navigate between chapters.
-  - `M`: Open library/menu.
-  - `ESC`: Close library/menu.
-- **Fast Performance:** In-memory caching for recently loaded chapters.
-- **Responsive Design:** Optimized for both mobile devices and large screens.
-- **Deep Linking:** Syncs reading progress with the URL hash (e.g., `index.html#42`).
+**Novel Reader** is a minimalist web reader built for long reading sessions. Chapters are plain text files in the `chapters/` folder, and the reader loads them one by one on a dark page with gold accents.
 
-## 🛠️ Technologies <a id="technologies"></a>
+Move between chapters with the buttons or the arrow keys, or open the library to jump straight to any chapter. The reader remembers the last chapter you read and keeps the chapter number in the address bar, so you can pick up where you left off or share a link to a specific chapter.
 
-- **HTML5**: Used to build the core structure and layout of the application.
-- **JavaScript**: Powers all interactive functionality, including chapter navigation, keyboard shortcuts, LocalStorage management, and dynamic content rendering.
-- **Tailwind CSS**: Utilized for rapid styling to create a premium, minimalist, and responsive user interface.
-- **Lucide Icons**: Provides the modern, clean vector icons used throughout the user interface.
+## <a id="features"></a> ✨ Features
 
-## 🚀 Installation <a id="installation"></a>
+- **Chapter navigation**: Move to the previous or next chapter with the buttons at the bottom of the page.
+- **Library**: Pick a chapter from the list or type a chapter number to jump straight to it.
+- **Keyboard shortcuts**: Use the left and right arrow keys to change chapters, `M` to open the library and `Esc` to close it.
+- **Reading progress**: The reader remembers your last chapter and opens it the next time you visit.
+- **Chapter links**: The chapter number is kept in the address, such as `index.html#3`, so you can open a chapter directly.
+- **Fast loading**: Chapters you have already opened are kept in memory and load instantly.
 
-### Prerequisites
+## <a id="tech"></a> 🛠️ Tech
 
-You need [Node.js](https://nodejs.org/) installed on your system to run the Tailwind CLI and serve the project locally.
+`HTML` · `JavaScript` · `Tailwind CSS` · `Lucide`
 
-### Installation
+## <a id="setup"></a> 🚀 Setup
 
-Follow these steps to run the project on your local machine:
+### Requirements
 
-1. **Clone the Repository:**
+- **Node.js**
+
+### Step-by-Step Installation
+
+1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/xkintaro/text-reader.git
-   cd text-reader
+   git clone https://github.com/xkintaro/novel-reader.git
+   cd novel-reader
    ```
 
-2. **Install Dependencies:**
+2. **Install dependencies**
 
    ```bash
    npm install
    ```
 
-3. **Start the Development Server:**
+3. **Start the server**
 
    ```bash
    npm start
    ```
 
-You can view the project by going to `http://localhost:5173` in your browser.
+Open the app at [http://localhost:3000](http://localhost:3000).
 
-## ⚙️ Configuration <a id="configuration"></a>
+If you change the styles, run `npm run dev` in a separate terminal to rebuild `output.css` with Tailwind CSS.
 
-Text Reader is highly flexible. While it expects files in a specific format by default, you can easily customize the behavior via the `CONFIG` object in `script.js`.
+### Configuration
 
-### Default Expectations
-
-By default, the reader scans the `chapters/` directory for files named `chapter-1.txt`, `chapter-2.txt`, etc.
-
-### Customizing the Reader
-
-Open `script.js` and modify the `CONFIG` constant at the top of the file:
+The reader looks for files named `chapter-1.txt`, `chapter-2.txt` and so on in the `chapters/` folder. You can change this in the `CONFIG` object at the top of `script.js`:
 
 ```javascript
 const CONFIG = {
-  chapterPrefix: "chapter-",     // Prefix of your files
-  chapterExtension: ".txt",      // File extension
-  basePath: "./chapters/",       // Folder where chapters are stored
-  totalChapters: 2235,           // Total number of chapters
-  storageKey: "lastChapter",     // LocalStorage key for progress
+    chapterPrefix: 'chapter-',     // Prefix of your files
+    chapterExtension: '.txt',      // File extension
+    basePath: './chapters/',       // Folder where chapters are stored
+    totalChapters: 6,              // Total number of chapters
+    storageKey: 'lastChapter'      // LocalStorage key for progress
 };
 ```
 
-<img src="md/20260414142727595.jpg" width="100%" />
+## <a id="license"></a> 📄 License
 
-## 📄 License <a id="license"></a>
-
-This project is licensed under the MIT License. You can check the [LICENSE](LICENSE) file for details.
-
-## 🖼️ Gallery <a id="gallery"></a>
-
-<img src="md/20260414142727652.jpg" width="%100" />
-
-#
-
-<img src="md/20260414142727721.jpg" width="auto" />
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 #
 

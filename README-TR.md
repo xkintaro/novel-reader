@@ -1,136 +1,117 @@
 <a href="README.md">
- <img src="https://img.shields.io/badge/Language-English-blue?style=flat-square&logo=google-translate&logoColor=white" alt="English">
+  <img src="https://img.shields.io/badge/Language-English-blue?style=flat-square&logo=google-translate&logoColor=white" alt="English">
 </a>
 <a href="README-TR.md">
- <img src="https://img.shields.io/badge/Dil-Türkçe-red?style=flat-square&logo=google-translate&logoColor=white" alt="Türkçe">
+  <img src="https://img.shields.io/badge/Language-Türkçe-red?style=flat-square&logo=google-translate&logoColor=white" alt="Türkçe">
 </a>
 
   <br />
   <br />
 
 <div align="center">
-  <img src="kintaro.png" width="120" height="120" />
+  <img src="mascot.png" width="120" height="120" />
   <br />
   <br />
 
   <p>
-    Akıcı ve odaklanmış bir okuma deneyimi sunan minimalist web novel reader.
+     Romanları bölüm bölüm okumak için tasarlanmış sade bir web okuyucusu.
   </p>
 
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![Lucide Icons](https://img.shields.io/badge/Lucide-FF69B4?style=for-the-badge&logo=lucide&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
 
   <p>
+    <a href="#warning">Uyarı</a> •
+    <a href="#demo">Demo</a> •
+    <a href="#about">Hakkında</a> •
     <a href="#features">Özellikler</a> •
-    <a href="#technologies">Teknolojiler</a> •
-    <a href="#installation">Kurulum</a> •
-    <a href="#configuration">Konfigürasyon</a> •
-    <a href="#license">Lisans</a> •
-    <a href="#gallery">Galeri</a>
+    <a href="#tech">Teknolojiler</a> •
+    <a href="#setup">Kurulum</a> •
+    <a href="#license">Lisans</a>
   </p>
 
   <br />
   <br />
 </div>
 
-## 📷 Demo Linki
+## <a id="warning"></a> ⚠️ Uyarı
 
-- [https://xkintaro.github.io/text-reader/](https://xkintaro.github.io/text-reader/)
+Bu proje ilk olarak **Aether Reader** adıyla yayınlandı, ardından adı **Text Reader** olarak değiştirildi. Ne işe yaradığını daha iyi anlatması için adı şimdi de **Novel Reader** oldu. Bu değişiklikle birlikte eski logo, favicon olarak da kullanılan yeni bir logoyla değiştirildi.
 
-## 📋 Hakkında
+## <a id="demo"></a> 📷 Demo
 
-**Text Reader**, odaklanma odaklı bir okuma deneyimi için tasarlanmış premium, minimalist bir web novel reader arayüzüdür. Yumuşak geçişler, klavye kısayolları ve kalıcı okuma ilerlemesi sunan şık ve modern bir UI sağlar.
+- [https://xkintaro.github.io/novel-reader/](https://xkintaro.github.io/novel-reader/)
 
-## ✨ Özellikler <a id="features"></a>
+## <a id="about"></a> 📋 Hakkında
 
-- **Premium Estetik:** Glassmorphism efektleri ve altın sarısı vurgularla donatılmış, dark-themed (karanlık tema) arayüz.
-- **Kesintisiz Navigasyon:** Bölümler arasında geçiş yapmak için kullanımı kolay yönlendirme butonları.
-- **Bölüm Kütüphanesi:** Hızlı bölüm seçimi ve doğrudan geçiş yapmak için modal tabanlı bir kütüphane.
-- **Kalıcı Okuma:** LocalStorage kullanarak en son okuduğunuz bölümü otomatik olarak hatırlar.
-- **Klavye Kısayolları:**
-  - `ArrowLeft` / `ArrowRight`: Bölümler arasında geçiş yapın.
-  - `M`: Kütüphaneyi/menüyü açın.
-  - `ESC`: Kütüphaneyi/menüyü kapatın.
-- **Hızlı Performans:** Son yüklenen bölümler için in-memory caching (bellek içi önbelleğe alma).
-- **Responsive Tasarım:** Hem mobil cihazlar hem de büyük ekranlar için optimize edilmiştir.
-- **Deep Linking:** Okuma ilerlemesini URL hash'i ile senkronize eder (örn. `index.html#42`).
+**Novel Reader**, uzun okuma seansları için tasarlanmış sade bir web okuyucusudur. Bölümler `chapters/` klasöründeki düz metin dosyalarıdır ve okuyucu bunları altın rengi vurgulara sahip koyu bir sayfada tek tek yükler.
 
-## 🛠️ Teknolojiler <a id="technologies"></a>
+Bölümler arasında butonlarla veya ok tuşlarıyla geçiş yapın ya da kütüphaneyi açarak istediğiniz bölüme doğrudan atlayın. Okuyucu en son okuduğunuz bölümü hatırlar ve bölüm numarasını adres çubuğunda tutar. Böylece kaldığınız yerden devam edebilir veya belirli bir bölümün bağlantısını paylaşabilirsiniz.
 
-- **HTML5**: Uygulamanın temel iskeletini ve sayfa yapısını oluşturmak için kullanıldı.
-- **JavaScript**: Bölüm geçişleri, klavye kısayolları, LocalStorage yönetimi ve dinamik veri yükleme işlemlerini sağlar.
-- **Tailwind CSS**: Modern, minimalist ve responsive arayüz tasarımını hızlıca stilize etmek için tercih edildi.
-- **Lucide Icons**: Arayüzde kullanılan modern, temiz ve şık vektörel ikon setini sağlar.
+## <a id="features"></a> ✨ Özellikler
 
-## 🚀 Kurulum <a id="installation"></a>
+- **Bölüm geçişi**: Sayfanın altındaki butonlarla önceki veya sonraki bölüme geçin.
+- **Kütüphane**: Listeden bir bölüm seçin veya bölüm numarasını yazarak doğrudan o bölüme atlayın.
+- **Klavye kısayolları**: Bölüm değiştirmek için sol ve sağ ok tuşlarını, kütüphaneyi açmak için `M`, kapatmak için `Esc` tuşunu kullanın.
+- **Okuma ilerlemesi**: Okuyucu son bölümünüzü hatırlar ve bir sonraki ziyaretinizde onu açar.
+- **Bölüm bağlantıları**: Bölüm numarası `index.html#3` gibi adreste tutulur, böylece bir bölümü doğrudan açabilirsiniz.
+- **Hızlı yükleme**: Daha önce açtığınız bölümler bellekte tutulur ve anında yüklenir.
+
+## <a id="tech"></a> 🛠️ Teknolojiler
+
+`HTML` · `JavaScript` · `Tailwind CSS` · `Lucide`
+
+## <a id="setup"></a> 🚀 Kurulum
 
 ### Gereksinimler
 
-Tailwind CLI çalıştırmak ve projeyi yerel olarak sunmak için sisteminizde [Node.js](https://nodejs.org/) kurulu olması gerekir.
+- **Node.js**
 
-### Kurulum
+### Adım Adım Kurulum
 
-Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin:
-
-1. **Repository'yi Klonlayın:**
+1. **Depoyu klonlayın**
 
    ```bash
-   git clone https://github.com/xkintaro/text-reader.git
-   cd text-reader
+   git clone https://github.com/xkintaro/novel-reader.git
+   cd novel-reader
    ```
 
-2. **Bağımlılıkları Yükleyin:**
+2. **Bağımlılıkları yükleyin**
 
    ```bash
    npm install
    ```
 
-3. **Geliştirici Sunucusunu Başlatın:**
+3. **Sunucuyu başlatın**
 
    ```bash
    npm start
    ```
 
-   Tarayıcınızda `http://localhost:5173` adresine giderek projeyi görüntüleyebilirsiniz.
+Uygulamayı şu adreste açın: [http://localhost:3000](http://localhost:3000).
 
-## ⚙️ Konfigürasyon <a id="configuration"></a>
+Stilleri değiştirirseniz `output.css` dosyasını Tailwind CSS ile yeniden oluşturmak için ayrı bir terminalde `npm run dev` komutunu çalıştırın.
 
-Text Reader son derece esnektir. Varsayılan olarak dosyaları belirli bir formatta beklese de, `script.js` dosyasındaki `CONFIG` objesi aracılığıyla davranışını kolayca özelleştirebilirsiniz.
+### Yapılandırma
 
-### Varsayılan Beklentiler
-
-Okuyucu, varsayılan olarak `chapters/` dizinini tarayarak `chapter-1.txt`, `chapter-2.txt` gibi adlandırılmış dosyaları arar.
-
-### Okuyucuyu Özelleştirme
-
-`script.js` dosyasını açın ve dosyanın en üstündeki `CONFIG` sabitini değiştirin:
+Okuyucu, `chapters/` klasöründe `chapter-1.txt`, `chapter-2.txt` gibi adlandırılmış dosyaları arar. Bunu `script.js` dosyasının başındaki `CONFIG` nesnesinden değiştirebilirsiniz:
 
 ```javascript
 const CONFIG = {
-  chapterPrefix: "chapter-",     // Dosyalarınızın ön eki
-  chapterExtension: ".txt",      // Dosya uzantısı
-  basePath: "./chapters/",       // Bölümlerin saklandığı klasör yolu
-  totalChapters: 2235,           // Toplam bölüm sayısı
-  storageKey: "lastChapter",     // İlerleme için LocalStorage anahtarı
+    chapterPrefix: 'chapter-',     // Prefix of your files
+    chapterExtension: '.txt',      // File extension
+    basePath: './chapters/',       // Folder where chapters are stored
+    totalChapters: 6,              // Total number of chapters
+    storageKey: 'lastChapter'      // LocalStorage key for progress
 };
 ```
 
-<img src="md/20260414142727595.jpg" width="100%" />
+## <a id="license"></a> 📄 Lisans
 
-## 📄 Lisans <a id="license"></a>
-
-Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasını inceleyebilirsiniz.
-
-## 🖼️ Galeri <a id="gallery"></a>
-
-<img src="md/20260414142727652.jpg" width="%100" />
-
-#
-
-<img src="md/20260414142727721.jpg" width="auto" />
+Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakabilirsiniz.
 
 #
 
