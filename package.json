@@ -1,5 +1,5 @@
 {
-  "name": "text-reader",
+  "name": "novel-reader",
   "scripts": {
     "dev": "npx @tailwindcss/cli -i ./input.css -o ./output.css --watch",
     "start": "npx serve ."

@@ -1,5 +1,5 @@
 @echo off
-title Reverend Insanity Starter
+title Novel Reader Starter
 
 echo Starting...
 start cmd /k "npm run start"
